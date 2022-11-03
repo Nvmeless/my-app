@@ -1,9 +1,10 @@
 import React from 'react';
 import { Header } from '../../atoms/Header';
-import Menu from '../../atoms/Menu';
+import MenuBar from '../../atoms/MenuBar';
 import { TextP } from '../../atoms/TextP';
 import { MenuButton } from '../../atoms/MenuButton';
 import './index.css'
+import { Menu } from '../../molecules/Menu';
 
 export const Basic = () => {
     return (
@@ -12,12 +13,18 @@ export const Basic = () => {
             <TextP>
                 L'application n'est pas encore en production, elle en est meme aux fondations soyez indulgent alors !
             </TextP>
-            <Menu>
+            {/* <MenuBar>
                 <MenuButton uri={"Lezgo"} title={"Lezgo"} >Lezgo</MenuButton>
                 <MenuButton uri={"Lezgo"} title={"Lezgo"} >Lezgo</MenuButton>
                 <MenuButton uri={"Lezgo"} title={"Lezgo"} >Lezgo</MenuButton>
                 <MenuButton uri={"Lezgo"} title={"Lezgo"} >Lezgo</MenuButton>
-            </Menu>
+            </MenuBar> */}
+            <Menu menus={[
+                {title:'Juli', uri:'lezgo'},
+                {title:'Lezgi', uri:'lezgo'},
+                {title:'Juli', uri:'lezgo'},
+                {title:'Lezgi', uri:'lezgo'},
+                ]}></Menu>
         </>
         )
 };
