@@ -3,7 +3,7 @@ nav {
     height: 7vh;
     width: 100vw;
     z-index: 100;
-    position: absolute;
+    position: fixed;
     bottom:0;
 }
 

@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-export const Header = () => {
+export const Header = (props) => {
     return (
-        <h1 id='header'>Hello,<br/>Username</h1>
+        <h1 id='header'>Hello,<br/>{props?.username}</h1>
     )
 };
 

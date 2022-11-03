@@ -8,7 +8,7 @@ nav {
     bottom:0;
     border: solid rgba(27, 27, 27, 0.3) 2px;
     box-shadow: rgb(90, 90, 90) 1px 1px 5px 1px;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 10*px;
     border-top-right-radius: 10px;
     border-bottom: none;
 
