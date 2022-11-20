@@ -8,7 +8,7 @@ export const Menu = ({menus}) => {
     const makeMenu = () => {
 
         return menus.map(( menu ) => {
-            return (<MenuButton uri={menu.uri}>{menu.title}</MenuButton>)
+            return (<MenuButton uri={menu.uri}>{menu.icon ? menu.icon : menu.title}</MenuButton>)
         })
     }
 
