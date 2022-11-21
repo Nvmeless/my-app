@@ -81,9 +81,11 @@ let {varTwo} = jsonObj;
 
 shifumi = isFreak && !varTwo ? "On Commence toujours par la pierre !" : varTwo ? crashOuFenek : cokeMan;
 
+shifumi = isFreak && !varTwo ? shifumi : shifumi();
+// if(isFreak && !varTwo){
+//     shifumi = shifumi();
+// }
 
-if(isFreak && !varTwo){
-    shifumi = shifumi();
-}
+
 console.log(shifumi);
 //Retourne "En Ciseauuuu"
