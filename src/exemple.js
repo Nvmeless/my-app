@@ -89,3 +89,19 @@ shifumi = isFreak && !varTwo ? shifumi : shifumi();
 
 console.log(shifumi);
 //Retourne "En Ciseauuuu"
+
+
+
+
+
+
+
+const ga = false && "n'est pas executé"
+const bu = true && (() => { "est executé" })
+
+const zo = "Je suis renvoyé" || "Je ne suis pas renvoyé"
+
+const teh = false || "Je suis renvoyé"
+
+const phrase = `On peu voir que bu ${bu()} et que teh et zo renvoie ${teh || zo}`
+
