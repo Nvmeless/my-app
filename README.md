@@ -1,5 +1,5 @@
 
-# ⬆️ Initialisation du README
+# ⬆️ Styles
 
 
 
@@ -7,7 +7,9 @@
 
 | Requirement      |
 | ------------- |
-| `composer require symfony/maker-bundle --dev`|
+| `npm install react-icons --save`|
+| `npx storybook init`|
+| `npm install --save styled-components`|
 
 
 | Commande      | Utilité       | 
