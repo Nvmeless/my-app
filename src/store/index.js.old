@@ -1,0 +1,54 @@
+console.log("Redux")
+
+import {createStore} from 'redux';
+let id = 3;
+const initialState = [
+    {
+        id: 1,
+        title: 'Enregistrer l\'etat ',
+        completed: true
+    },
+    {
+        id: 2,
+        title: 'Preparer un cours sur Redux',
+        completed: true
+    },
+    {
+        id: 3,
+        title: 'Enregistrer l\'etat ',
+        completed: true
+    }
+
+]
+
+
+const ADD_MY_ACTION = 'ADD_MY_ACTION';
+
+
+function MyReducer ( state = initialState, action) {
+    switch (action.type) {
+        case ADD_MY_ACTION:
+            return [...state, {id: ++id, completed: false, ...action.payload}];
+            break;
+    
+        default:
+            return state
+            break;
+    }
+}
+
+// const state = MyReducer(undefined, {})
+// const newState = MyReducer(state, {type: ADD_MY_ACTION, payload:{title:"Test"}};
+// console.log(state, newState)
+
+// const store = createStore(MyReducer);
+const store = createStore(MyReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__);
+
+
+store.subscribe(() => {console.log(store.getState())});
+store.dispatch({type: ADD_MY_ACTION, payload: {title:'TEST'} });
+store.dispatch({type: ADD_MY_ACTION, payload: {title:'TEST2'} });
+store.dispatch({type: ADD_MY_ACTION, payload: {title:'TEST3'} });
+store.dispatch({type: ADD_MY_ACTION, payload: {title:'TEST4'} });
+store.dispatch({type: ADD_MY_ACTION, payload: {title:'TEST5'} });
+

@@ -7,7 +7,7 @@ import './index.css'
 import { Menu } from '../../molecules/Menu';
 import { FcBiomass } from "react-icons/fc";
 import { CiLemon, CiBacon, CiAvocado, CiApple } from "react-icons/ci";
-
+import {Todo} from '../../molecules/Todo'
 export const Basic = () => {
     return (
         <>
@@ -21,6 +21,7 @@ export const Basic = () => {
                 <MenuButton uri={"Lezgo"} title={"Lezgo"} >Lezgo</MenuButton>
                 <MenuButton uri={"Lezgo"} title={"Lezgo"} >Lezgo</MenuButton>
             </MenuBar> */}
+            <Todo></Todo>
             <Menu menus={[
                 {title:'Juli', uri:'lezgo', icon: (<CiLemon></CiLemon>)},
                 {title:'Lezgi', uri:'lezgo', icon: (<CiApple></CiApple>)},
