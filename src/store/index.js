@@ -31,6 +31,7 @@ const todoSlice = createSlice({
             //Action {type:"todo/deleteTask", payload:"Ma Nouvelle task"}
 
             state = state.filter(t => t.id !== action.payload);
+            return state;
         }
     }
 })
