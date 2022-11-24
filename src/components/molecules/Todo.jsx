@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTask } from "../../store";
+import styled from 'styled-components'
+const Task = styled.div`
+    background-color: ${props => props.theme.primary};
+`
 
 export const Todo = () => {
 
@@ -61,10 +65,10 @@ export const Todo = () => {
     //     };
     // }, [input]);
 
-    
+
     const renderTask = () => {
         return task.map((t) => {
-            return <div><span onClick={()=> {dispatch(toggleTask(t.id))}}>{t.isDone ? 'Fait': "pas fait"}</span> - {t.title} <span onClick={() => {deleteTask(t.id)}}>X</span></div>
+            return <Task><span onClick={()=> {dispatch(toggleTask(t.id))}}>{t.isDone ? 'Fait': "pas fait"}</span> - {t.title} <span onClick={() => {deleteTask(t.id)}}>X</span></Task>
         })
     }
 
