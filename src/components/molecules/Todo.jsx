@@ -4,12 +4,13 @@ import { useState } from "react";
 export const Todo = () => {
 
     const [task, setTask] = useState([
-        {id:1, text: "Rajouter le Todo Component", isDone: false},
+        {id:1, title: "Rajouter le Todo Component", isDone: false},
     ]);
+    const [taskInput, setTaskInput] = useState("Nouvelle tache")
 
     const addTask =  (text) => {
         const newTask = {
-            text, 
+            title:text, 
             id: Date.now(),
             done:false,
         }
@@ -77,6 +78,11 @@ export const Todo = () => {
         })
     }
 
+    const changeInput = (e, val) => {
+        if(taskInput !== val){
+            setTaskInput(val)
+        }
+    }
 
     return (
 
@@ -84,7 +90,9 @@ export const Todo = () => {
             {
                 renderTask()
             }
-            <button onClick={() => addTask('Nouvelle Tache')}>Nouvelle Tache</button>
+
+            <input onChange={(e, val) => {changeInput(e, e.target.value)}} placeholder={taskInput}/> 
+            <button onClick={() => addTask(taskInput)}>Nouvelle Tache</button>
         </div>
     )
 }
