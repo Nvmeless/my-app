@@ -1,5 +1,5 @@
 
-# ⬆️ Styles
+# ⬆️ Merci Toolkit
 
 
 
@@ -10,9 +10,9 @@
 | `npm install react-icons --save`|
 | `npx storybook init`|
 | `npm install --save styled-components`|
-| `npm install --save redux`|
 | `npm install --save animate.css`|
-| `npm install --save animate.css`|
+| `npm install --save @reduxjs/toolkit`|
+| `npm install --save react-redux`|
 
 
 | Commande      | Utilité       | 
