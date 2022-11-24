@@ -1,5 +1,5 @@
 
-# ⬆️ Merci Toolkit
+# ⬆️ Axios
 
 
 
@@ -13,6 +13,7 @@
 | `npm install --save animate.css`|
 | `npm install --save @reduxjs/toolkit`|
 | `npm install --save react-redux`|
+| `npm install --save axios`|
 
 
 | Commande      | Utilité       | 
