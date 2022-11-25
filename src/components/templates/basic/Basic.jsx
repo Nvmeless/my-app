@@ -9,11 +9,12 @@ import { FcBiomass } from "react-icons/fc";
 import { CiLemon, CiBacon, CiAvocado, CiApple } from "react-icons/ci";
 import {Todo} from '../../molecules/Todo'
 import GetterAxios from '../../molecules/GetterAxios';
+import GetterRedux from '../../molecules/GetterRedux';
 export const Basic = () => {
     return (
         <>
             <Header username="Jinn" icon={<FcBiomass/>}></Header>
-            <GetterAxios></GetterAxios>
+            <GetterRedux></GetterRedux>
         </>
         )
 };
